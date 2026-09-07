@@ -1,0 +1,970 @@
+/* HortaGats · estils de la landing */
+
+:root {
+  --paper: #F2EBDC;
+  --paper-clar: #FAF6EC;
+  --paper-fosc: #E6DBC4;
+  --tinta: #1F1B18;
+  --tinta-2: #5E5750;
+  --teula: #B9532B;
+  --persiana: #5B7358;
+  --avis: #8E1E14;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--tinta);
+  font-family: Karla, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+section {
+  scroll-margin-top: 61px;
+}
+
+/* ---------- Capçalera ---------- */
+
+.capcalera {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 48px;
+  background: var(--paper);
+  border-bottom: 1px solid var(--tinta);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-marca {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  background: var(--teula);
+}
+
+.logo-marca::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--paper);
+}
+
+.logo-text {
+  font-family: Fraunces, Georgia, serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+}
+
+.nav a {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+.capcalera-boto {
+  display: inline-block;
+  padding: 12px 20px;
+  background: var(--tinta);
+  color: var(--paper);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+  border-radius: 2px;
+  box-shadow: 5px 5px 0 var(--teula);
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 4px 0;
+  cursor: pointer;
+}
+
+.menu span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--tinta);
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+  align-items: end;
+  padding: 56px 48px 64px;
+  border-bottom: 1px solid var(--tinta);
+}
+
+.hero-text {
+  grid-column: span 7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 48px;
+  min-height: 640px;
+}
+
+.hero-kicker {
+  color: var(--teula);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.hero-titol {
+  font-family: Fraunces, Georgia, serif;
+  font-size: 120px;
+  font-weight: 400;
+  letter-spacing: -3px;
+  line-height: 0.92;
+}
+
+.hero-peu {
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+}
+
+.hero-p {
+  max-width: 432px;
+  line-height: 1.45;
+}
+
+.hero-ctas {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.hero-boto {
+  display: inline-block;
+  padding: 14px 24px;
+  background: var(--tinta);
+  color: var(--paper);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+  border-radius: 2px;
+  box-shadow: 5px 5px 0 var(--teula);
+  white-space: nowrap;
+}
+
+.hero-boto:hover {
+  transform: translate(3px, 3px);
+}
+
+.hero-boto-secundari {
+  display: inline-block;
+  padding: 13px 23px;
+  border: 1px solid var(--tinta);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+.hero-boto-secundari:hover {
+  background: var(--tinta);
+  color: var(--paper);
+  box-shadow: 2px 2px 0 var(--teula);
+  transform: translate(3px, 3px);
+}
+
+.hero-foto {
+  grid-column: span 5;
+  border: 1px solid var(--tinta);
+  box-shadow: 8px 8px 0 var(--teula);
+}
+
+.hero-foto img {
+  width: 100%;
+  height: 640px;
+  object-fit: cover;
+}
+
+/* ---------- Qui som ---------- */
+
+.qui-som {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+  padding: 64px 48px;
+  border-bottom: 1px solid #1F1B18;
+}
+
+.qui-som-foli {
+  grid-column: span 3;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.qui-som-foli .foli-num {
+  font-family: Fraunces, Georgia, serif;
+  font-size: 72px;
+  font-weight: 300;
+  line-height: 1;
+  color: #B9532B;
+}
+
+.qui-som-foli .foli-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.qui-som-text {
+  grid-column: span 5;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.qui-som-text h2 {
+  font-family: Fraunces, Georgia, serif;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: -0.8px;
+  line-height: 1.08;
+}
+
+.xifres {
+  grid-column: span 4;
+}
+
+.xifra {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 0 20px;
+  border-top: 1px solid #1F1B18;
+}
+
+.xifra:last-child {
+  border-bottom: 1px solid #1F1B18;
+}
+
+.xifra-num {
+  font-family: Fraunces, Georgia, serif;
+  font-size: 88px;
+  font-weight: 300;
+  letter-spacing: -2px;
+  line-height: 0.95;
+}
+
+.xifra-num--teula {
+  color: #B9532B;
+}
+
+.xifra-label {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #5E5750;
+}
+
+/* ---------- Els gats ---------- */
+
+.gats {
+  padding: 64px 48px 80px;
+  border-bottom: 1px solid #1f1b18;
+}
+
+.gats-capcalera {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+  align-items: end;
+  margin-bottom: 40px;
+}
+
+.gats-foli {
+  grid-column: span 3;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gats-foli .foli-num {
+  font-family: Fraunces, Georgia, serif;
+  font-size: 72px;
+  font-weight: 300;
+  line-height: 1;
+  color: #B9532B;
+}
+
+.gats-foli .foli-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.gats-titol {
+  grid-column: span 5;
+  font-family: Fraunces, Georgia, serif;
+  font-size: 72px;
+  font-weight: 400;
+  letter-spacing: -2px;
+  line-height: 0.95;
+}
+
+.gats-p {
+  grid-column: span 4;
+  font-size: 15px;
+  color: #5E5750;
+}
+
+.fitxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 24px;
+  row-gap: 22px;
+}
+
+.fitxa {
+  display: flex;
+  flex-direction: column;
+  background: #FAF6EC;
+  border: 1px solid #1F1B18;
+}
+
+.fitxa:hover {
+  box-shadow: 5px 5px 0 #B9532B;
+}
+
+.fitxa img {
+  width: 100%;
+  height: 324px;
+  border-bottom: 1px solid #1F1B18;
+}
+
+.fitxa-cos {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+}
+
+.fitxa-nom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fitxa-nom h3 {
+  font-family: Fraunces, Georgia, serif;
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+}
+
+.reservat {
+  padding: 5px 8px 4px;
+  background: #B9532B;
+  color: #F2EBDC;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.reservat--disponible {
+  background: #5B7358;
+}
+
+.reservat--adoptat {
+  background: #1F1B18;
+}
+
+.fitxa-meta {
+  font-size: 13px;
+  letter-spacing: 0.2px;
+  line-height: 1.4;
+  color: #5E5750;
+}
+
+.fitxa-desc {
+  font-size: 15px;
+}
+
+.fitxa-enllac {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #B9532B;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.fitxa-enllac--tancat {
+  color: #5E5750;
+  text-decoration: none;
+}
+
+/* ---------- Contacte ---------- */
+
+.contacte {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+  padding: 60px 48px 80px;
+  border-bottom: 1px solid #1F1B18;
+}
+
+.contacte-text {
+  grid-column: span 5;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.contacte-foli {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contacte-foli .foli-num {
+  font-family: Fraunces, Georgia, serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 1;
+  color: #B9532B;
+}
+
+.contacte-foli .foli-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.contacte-text h2 {
+  font-family: Fraunces, Georgia, serif;
+  font-size: 56px;
+  font-weight: 400;
+  letter-spacing: -1.5px;
+  line-height: 1;
+}
+
+.contacte-p {
+  max-width: 456px;
+}
+
+.dades {
+  margin: 0;
+  max-width: 456px;
+}
+
+.dada {
+  display: flex;
+  gap: 16px;
+  padding: 14px 0;
+  border-top: 1px solid #1F1B18;
+}
+
+.dada:last-child {
+  border-bottom: 1px solid #1F1B18;
+}
+
+.dada dt {
+  flex: 0 0 120px;
+  padding-top: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: #5E5750;
+}
+
+.dada dd {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.formulari {
+  grid-column: span 7;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 8px;
+}
+
+.formulari-fila {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.camp {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.camp label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.camp input,
+.camp select,
+.camp textarea {
+  width: 100%;
+  height: 48px;
+  padding: 0 16px;
+  background: #FAF6EC;
+  border: 1px solid #1F1B18;
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: 16px;
+  color: #1F1B18;
+}
+
+.camp input::placeholder,
+.camp textarea::placeholder {
+  color: #5E5750;
+  opacity: 1;
+}
+
+.camp select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 40px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M0 0h12L6 8z' fill='%231F1B18'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  cursor: pointer;
+}
+
+.camp select:invalid,
+.camp select option[value=""] {
+  color: #5E5750;
+}
+
+.camp textarea {
+  height: 160px;
+  padding: 12px 16px;
+  line-height: 1.45;
+  resize: vertical;
+}
+
+.camp--error label {
+  color: #8E1E14;
+}
+
+.camp--error input,
+.camp--error select,
+.camp--error textarea {
+  border-color: #8E1E14;
+}
+
+.camp-error {
+  font-size: 13px;
+  font-weight: 500;
+  color: #8E1E14;
+}
+
+.consentiment {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.consentiment input {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  accent-color: #1F1B18;
+}
+
+.formulari-accions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-top: 8px;
+}
+
+.formulari-boto {
+  flex-shrink: 0;
+  padding: 16px 32px;
+  background: #1F1B18;
+  color: #F2EBDC;
+  border: 0;
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+  box-shadow: 5px 5px 0 #B9532B;
+  cursor: pointer;
+}
+
+.formulari-boto:hover {
+  transform: translate(3px, 3px);
+}
+
+.formulari-nota {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #5E5750;
+}
+
+.formulari-ok {
+  font-weight: 700;
+  color: #5B7358;
+}
+
+/* ---------- Peu ---------- */
+
+.peu {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 48px 48px 32px;
+  background: #1F1B18;
+  color: #F2EBDC;
+}
+
+.peu-columnes {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 36px 24px;
+}
+
+.peu-marca {
+  grid-column: span 5;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.peu-marca p {
+  max-width: 432px;
+  font-size: 14px;
+  color: #E6DBC4;
+}
+
+.logo--peu .logo-marca::after {
+  background: #1F1B18;
+}
+
+.peu-columna {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.peu-columna:nth-child(2) {
+  grid-column: span 3;
+}
+
+.peu-columna:nth-child(3) {
+  grid-column: span 4;
+}
+
+.peu-columna h4 {
+  margin-bottom: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: #B9532B;
+}
+
+.peu-columna a:hover {
+  text-decoration: underline;
+}
+
+.peu-legal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 16px;
+  border-top: 1px solid #E6DBC4;
+  font-size: 12px;
+  color: #E6DBC4;
+}
+
+.peu-legal-enllacos {
+  display: flex;
+  gap: 24px;
+  flex-shrink: 0;
+}
+
+/* ---------- Mòbil ---------- */
+
+@media (max-width: 900px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  .capcalera {
+    padding: 14px 20px;
+    flex-wrap: wrap;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    padding: 20px 0 8px;
+  }
+
+  .nav.oberta {
+    display: flex;
+  }
+
+  .capcalera-boto {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px 20px 40px;
+  }
+
+  .hero-text {
+    display: contents;
+  }
+
+  .hero-kicker {
+    order: 1;
+  }
+
+  .hero-titol {
+    order: 2;
+  }
+
+  .hero-kicker {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+
+  .hero-titol {
+    font-size: 60px;
+    letter-spacing: -1.5px;
+    line-height: 0.94;
+  }
+
+  .hero-foto {
+    order: 3;
+    width: 100%;
+    box-shadow: 6px 6px 0 var(--teula);
+  }
+
+  .hero-foto img {
+    height: 300px;
+  }
+
+  .hero-peu {
+    order: 4;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-p {
+    max-width: none;
+  }
+
+  .qui-som,
+  .gats,
+  .contacte {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 40px 20px;
+  }
+
+  .gats {
+    padding-bottom: 48px;
+  }
+
+  .contacte {
+    padding-bottom: 48px;
+  }
+
+  .qui-som-foli,
+  .gats-foli,
+  .contacte-foli {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 12px;
+  }
+
+  .qui-som-foli .foli-num,
+  .gats-foli .foli-num,
+  .contacte-foli .foli-num {
+    font-size: 56px;
+  }
+
+  .qui-som-text h2 {
+    font-size: 32px;
+    letter-spacing: -0.6px;
+  }
+
+  .xifra-num {
+    font-size: 72px;
+  }
+
+  .gats-capcalera {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+    margin-bottom: 0;
+  }
+
+  .gats-titol {
+    font-size: 52px;
+    letter-spacing: -1.5px;
+  }
+
+  .fitxes {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .fitxa img {
+    height: 262px;
+  }
+
+  .contacte-text {
+    gap: 24px;
+  }
+
+  .contacte-text h2 {
+    font-size: 40px;
+    letter-spacing: -1px;
+  }
+
+  .contacte-p,
+  .dades {
+    max-width: none;
+  }
+
+  .dada dt {
+    flex-basis: 100px;
+  }
+
+  .formulari {
+    padding-top: 16px;
+  }
+
+  .formulari-fila {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .formulari-accions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .formulari-boto {
+    width: 100%;
+  }
+
+  .peu {
+    gap: 32px;
+    padding: 40px 20px 24px;
+  }
+
+  .peu-columnes {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .peu-marca p {
+    max-width: none;
+  }
+
+  .peu-legal {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}

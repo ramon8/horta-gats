@@ -3,10 +3,268 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hortagats</title>
+  <title>HortaGats · Protectora de gats d'Horta</title>
+  <meta name="description" content="Som una colla de veïnes que cuidem les colònies de gats d'Horta, Barcelona. Els gats que ja no poden viure al carrer busquen casa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,700&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+  <header class="capcalera">
+    <a class="logo" href="#">
+      <span class="logo-marca"></span>
+      <span class="logo-text">HortaGats</span>
+    </a>
+    <nav class="nav">
+      <a href="#qui-som">Qui som</a>
+      <a href="#els-gats">Els gats</a>
+      <a href="#contacte">Com ajudar</a>
+      <a href="#contacte">Contacte</a>
+    </nav>
+    <a class="capcalera-boto" href="#contacte">Fes-te voluntària</a>
+    <div class="menu" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-text">
+        <p class="hero-kicker">Protectora de gats · Horta, Barcelona · Des del 2011</p>
+        <h1 class="hero-titol">Els gats d'Horta ja tenen barri. Els falta casa.</h1>
+        <div class="hero-peu">
+          <p class="hero-p">Som una colla de veïnes que cuidem les colònies de gats d'Horta. Els coneixem pel nom, sabem qui es barallava amb qui i sabem quin necessita una casa tranquil·la. Aquí en trobaràs uns quants.</p>
+          <div class="hero-ctas">
+            <a class="hero-boto" href="#els-gats">Vull adoptar</a>
+            <a class="hero-boto-secundari" href="#contacte">Vull fer d'acollida</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-foto">
+        <img src="img/hero.jpg" alt="Gat ataronjat estirat al sol">
+      </div>
+    </section>
+
+    <section class="qui-som" id="qui-som">
+      <div class="qui-som-foli">
+        <span class="foli-num">01</span>
+        <span class="foli-label">Qui som</span>
+      </div>
+      <div class="qui-som-text">
+        <h2>Veïnes d'Horta que fa quinze anys que cuiden els gats del carrer.</h2>
+        <p>No tenim local ni pressupost. Tenim un magatzem que ens deixa una veïna al carrer de Campoamor, una furgoneta que arrenca a la segona i nou dones que han après a posar gàbies-trampa mirant vídeos i equivocant-se.</p>
+        <p>Fem CER: capturem, esterilitzem i retornem. Els gats que ja no poden viure al carrer, perquè són vells, malalts o massa confiats, els busquem una casa. No en donem cap sense conèixer abans qui se l'emporta.</p>
+      </div>
+      <div class="xifres">
+        <div class="xifra">
+          <span class="xifra-num">14</span>
+          <span class="xifra-label">colònies controlades entre el Carmel i la Vall d'Hebron</span>
+        </div>
+        <div class="xifra">
+          <span class="xifra-num xifra-num--teula">212</span>
+          <span class="xifra-label">gats esterilitzats des del 2011, pagats amb rifes i paradetes</span>
+        </div>
+        <div class="xifra">
+          <span class="xifra-num">9</span>
+          <span class="xifra-label">voluntàries, cap sou i una furgoneta compartida</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="gats" id="els-gats">
+      <div class="gats-capcalera">
+        <div class="gats-foli">
+          <span class="foli-num">02</span>
+          <span class="foli-label">Els gats</span>
+        </div>
+        <h2 class="gats-titol">Busquen casa</h2>
+        <p class="gats-p">Sis dels vint-i-tres que tenim ara mateix en acollida. Si cap d'aquests t'encaixa, pregunta'ns pels altres: en tenim de tots els caràcters.</p>
+      </div>
+
+      <div class="fitxes">
+
+        <article class="fitxa">
+          <img src="img/fum.jpg" alt="gat">
+          <div class="fitxa-cos">
+            <div class="fitxa-nom">
+              <h3>Fum</h3>
+              <span class="reservat reservat--disponible">Disponible</span>
+            </div>
+            <p class="fitxa-meta">Gris cendra · 7 anys · mascle · esterilitzat</p>
+            <p class="fitxa-desc">Va viure deu anys al safareig de la plaça de Santes Creus i encara el busca. Una orella escapçada de quan el vam esterilitzar. No li agraden els nens petits ni les presses. Amb qui té paciència, s'adorm a la falda al cap de tres dies.</p>
+            <a class="fitxa-enllac" href="#contacte">Pregunta per en Fum</a>
+          </div>
+        </article>
+
+        <article class="fitxa">
+          <img src="img/menta.jpg" alt="gat">
+          <div class="fitxa-cos">
+            <div class="fitxa-nom">
+              <h3>Menta</h3>
+              <span class="reservat">Reservada</span>
+            </div>
+            <p class="fitxa-meta">Tricolor · 1 any · femella · esterilitzada</p>
+            <p class="fitxa-desc">La té reservada una família del carrer del Tajo, pendents de la visita a casa.</p>
+            <a class="fitxa-enllac" href="#contacte">Pregunta per la Menta</a>
+          </div>
+        </article>
+
+        <article class="fitxa">
+          <img src="img/pruna.jpg" alt="gat">
+          <div class="fitxa-cos">
+            <div class="fitxa-nom">
+              <h3>Pruna</h3>
+              <span class="reservat reservat--disponible">Disponible</span>
+            </div>
+            <p class="fitxa-meta">Negra sencera · 3 anys · femella · esterilitzada</p>
+            <p class="fitxa-desc">Parla molt. Va amb la Llúcia i no les separem.</p>
+            <a class="fitxa-enllac" href="#contacte">Pregunta per la Pruna</a>
+          </div>
+        </article>
+
+        <article class="fitxa">
+          <img src="img/galet.jpg" alt="gat">
+          <div class="fitxa-cos">
+            <div class="fitxa-nom">
+              <h3>Galet</h3>
+              <span class="reservat reservat--adoptat">Adoptat</span>
+            </div>
+            <p class="fitxa-meta">Blanc i negre · 4 anys · mascle · esterilitzat</p>
+            <p class="fitxa-desc">Ja viu a Vallcarca amb en Joan i una gossa vella que el tolera. Ens envia una foto cada diumenge. El deixem aquí perquè és la prova que funciona.</p>
+            <span class="fitxa-enllac fitxa-enllac--tancat">Ja té casa</span>
+          </div>
+        </article>
+
+        <article class="fitxa">
+          <img src="img/quico.jpg" alt="gat">
+          <div class="fitxa-cos">
+            <div class="fitxa-nom">
+              <h3>Quico</h3>
+              <span class="reservat">Disponible</span>
+            </div>
+            <p class="fitxa-meta">Ataronjat · 2 anys · mascle · esterilitzat</p>
+            <p class="fitxa-desc">Cua trencada de naixement que no li fa cap nosa. Va ser el primer a sortir de sota el cotxe quan portàvem menjar. Cal que vagi amb un altre gat: sol s'avorreix i ho paga el sofà.</p>
+            <a class="fitxa-enllac" href="#contacte">Pregunta per en Quico</a>
+          </div>
+        </article>
+
+        <article class="fitxa">
+          <img src="img/llucia.jpg" alt="gat">
+          <div class="fitxa-cos">
+            <div class="fitxa-nom">
+              <h3>Llúcia</h3>
+              <span class="reservat">Reservada</span>
+            </div>
+            <p class="fitxa-meta">Blanca i grisa · 5 anys · femella · una mica sorda</p>
+            <p class="fitxa-desc">Reservada juntament amb la Pruna. Dorm damunt de qualsevol cosa que faci soroll, la rentadora inclosa.</p>
+            <a class="fitxa-enllac" href="#contacte">Pregunta per la Llúcia</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="contacte" id="contacte">
+      <div class="contacte-text">
+        <div class="contacte-foli">
+          <span class="foli-num">03</span>
+          <span class="foli-label">Contacte</span>
+        </div>
+        <h2>Escriu-nos, però no tinguis pressa.</h2>
+        <p class="contacte-p">Responem en dos o tres dies. Som voluntàries i totes tenim una altra feina. Si és urgent, un gat ferit o una colònia en perill, truca directament i deixa missatge.</p>
+        <dl class="dades">
+          <div class="dada">
+            <dt>Correu</dt>
+            <dd><a href="mailto:hola@hortagats.cat">hola@hortagats.cat</a></dd>
+          </div>
+          <div class="dada">
+            <dt>Urgències</dt>
+            <dd><a href="tel:+34682410793">682&nbsp;41&nbsp;07&nbsp;93</a> (la Roser)</dd>
+          </div>
+          <div class="dada">
+            <dt>Ens trobaràs</dt>
+            <dd>Dissabtes al matí a la paradeta del mercat d'Horta, i el primer diumenge de mes a la plaça d'Eivissa.</dd>
+          </div>
+        </dl>
+      </div>
+
+      <form class="formulari" action="#" method="post" novalidate>
+        <div class="formulari-fila">
+          <div class="camp">
+            <label>Nom i cognom</label>
+            <input type="text" name="nom" placeholder="Com et dius" required>
+          </div>
+          <div class="camp">
+            <label>Correu electrònic</label>
+            <input type="email" name="correu" placeholder="nom@exemple.cat" required>
+          </div>
+        </div>
+        <div class="camp">
+          <label>Quin gat t'interessa</label>
+          <select name="gat">
+            <option value="">Tria'n un, o cap: també pots venir a conèixer-los</option>
+            <option value="fum">Fum</option>
+            <option value="menta">Menta</option>
+            <option value="pruna">Pruna</option>
+            <option value="galet">Galet</option>
+            <option value="quico">Quico</option>
+            <option value="llucia">Llúcia</option>
+          </select>
+        </div>
+        <div class="camp">
+          <label>Explica'ns com és casa teva</label>
+          <textarea name="casa" rows="5" placeholder="Pis o casa, si hi ha balcó amb xarxa, altres animals, canalla, quantes hores passa buida. Sense adornar-ho." required></textarea>
+        </div>
+        <div class="consentiment">
+          <input type="checkbox" name="consentiment" required>
+          <label>Accepto que guardeu aquestes dades només per respondre'm. No les passem a ningú ni enviem butlletins.</label>
+        </div>
+        <div class="formulari-accions">
+          <button class="formulari-boto" type="submit">Envia el missatge</button>
+          <p class="formulari-nota">Els camps són tots obligatoris. Si no ens dius on viuries amb el gat, no podem continuar.</p>
+        </div>
+        <p class="formulari-ok" hidden>Rebut. Et responem en dos o tres dies.</p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="peu">
+    <div class="peu-columnes">
+      <div class="peu-marca">
+        <a class="logo logo--peu" href="#">
+          <span class="logo-marca"></span>
+          <span class="logo-text">HortaGats</span>
+        </a>
+        <p>Associació protectora de gats d'Horta. Magatzem cedit al carrer de Campoamor, 08031 Barcelona. No hi ha horari d'atenció: escriu abans de venir.</p>
+      </div>
+      <div class="peu-columna">
+        <h4>La pàgina</h4>
+        <a href="#qui-som">Qui som</a>
+        <a href="#els-gats">Els gats</a>
+        <a href="#contacte">Com ajudar</a>
+        <a href="#contacte">Contacte</a>
+      </div>
+      <div class="peu-columna">
+        <h4>On més som</h4>
+        <a href="https://instagram.com/hortagats">Instagram: @hortagats</a>
+        <span>Grup de Telegram de les voluntàries (només amb invitació)</span>
+        <span>Tauler d'anuncis del mercat d'Horta, al costat de la peixateria</span>
+      </div>
+    </div>
+    <div class="peu-legal">
+      <p>© 2026 HortaGats · Inscrita al Registre d'Associacions de la Generalitat de Catalunya · Fet a mà a Horta, sense galetes ni rastrejadors</p>
+      <div class="peu-legal-enllacos">
+        <a href="#">Avís legal</a>
+        <a href="#">Privadesa</a>
+      </div>
+    </div>
+  </footer>
 
   <script src="js/main.js"></script>
 </body>
